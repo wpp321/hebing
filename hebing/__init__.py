@@ -61,7 +61,7 @@ def parse_import(src: str, imports: set):
             for name in node.names:
                 get_imports(name.name, imports)
         if isinstance(node, ast.ImportFrom):
-            get_imports(str(node.module), imports)
+            get_imports(node.module.split('.')[0], imports)
 
 
 def get_imports(py_name: str, imports: set):
