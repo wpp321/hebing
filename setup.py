@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="hebing",
-    version="0.0.4",
+    version="0.0.5",
     author="WangXueJie",
     author_email="hajiew@163.com",
     description="merge multiple python files into one python file",

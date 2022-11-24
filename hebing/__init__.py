@@ -20,6 +20,7 @@ def sm4_encrypt(key, text):
 TEMPLATE = '''import sys
 import types
 from gmssl.sm4 import CryptSM4, SM4_DECRYPT
+import base64
 def sm4_decrypt(key, text):
     key = key.encode()
     text = base64.b64decode(text)
